@@ -24,13 +24,6 @@ def GenerateTreeHTML(dest, courses, course):
         outfile.write(header)
         outfile.write(courses[course].BuildHTMLTree(courses, startname=course))
 
-courseInfo = scraper.GenerateCourses("https://catalogs.northwestern.edu/undergraduate/courses-az/comp_sci/")
-pprint(courseInfo)
-
-print("\n" * 2)
-courses = prereqParser.GenerateConnections(courseInfo)
-pprint(courses)
-
 courses = {}
 courses["COMP_SCI 213"] = CourseNode("COMP_SCI 211")
 courses["COMP_SCI 211"] = CourseNode(["COMP_SCI 111", "COMP_SCI 150"], ConnectionType.Or)
@@ -48,9 +41,6 @@ courses["COMP_SCI 300"] = CourseNode([CourseNode(["COMP_SCI 211", "GEN_ENG 205-1
 
 with open("courses.json", "w") as outfile:
     json.dump(courses, outfile, cls=CourseNodeEncoder, indent=4)
-
-# PrintTree(courses, "COMP_SCI 213")
-# PrintTree(courses, "COMP_SCI 111")
 
 
 GenerateTreeHTML("tree.html", courses, "COMP_SCI 300")
