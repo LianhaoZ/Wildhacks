@@ -12,3 +12,7 @@ Explanation:
 AND: There are co-requisites for the class
 OR: Alternative exist for pre-requisites the class
 NONE: No Co-requsites for the class, in which there may be pre-requisites for the class
+
+Example of execution:
+<img width="479" alt="image" src="https://user-images.githubusercontent.com/54448351/232339649-430622bc-8f82-4e70-a7b1-1e6b31ac19c1.png">
+
