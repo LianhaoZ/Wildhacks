@@ -1,42 +1,21 @@
 {
     "COMP_SCI 213": {
-        "connections": "COMP_SCI 211",
-        "connectionType": 0
+        "connections": "COMP_SCI 211"
     },
     "COMP_SCI 211": {
         "connections": [
-            {
-                "connections": "COMP_SCI 111",
-                "connectionType": 0
-            },
-            {
-                "connections": "COMP_SCI 150",
-                "connectionType": 0
-            }
-        ],
-        "connectionType": 1
+            "COMP_SCI 111",
+            "COMP_SCI 150"
+        ]
     },
     "COMP_SCI 111": null,
     "COMP_SCI 150": {
         "connections": [
-            {
-                "connections": "COMP_SCI 110",
-                "connectionType": 0
-            },
-            {
-                "connections": "COMP_SCI 111",
-                "connectionType": 0
-            },
-            {
-                "connections": "GEN_ENG 205-1",
-                "connectionType": 0
-            },
-            {
-                "connections": "GEN_ENG 206-1",
-                "connectionType": 0
-            }
-        ],
-        "connectionType": 1
+            "COMP_SCI 110",
+            "COMP_SCI 111",
+            "GEN_ENG 205-1",
+            "GEN_ENG 206-1"
+        ]
     },
     "GEN_ENG 205-1": null,
     "GEN_ENG 206-1": null,
@@ -45,22 +24,13 @@
         "connections": [
             {
                 "connections": [
-                    {
-                        "connections": "COMP_SCI 211",
-                        "connectionType": 0
-                    },
-                    {
-                        "connections": "GEN_ENG 205-1",
-                        "connectionType": 0
-                    }
-                ],
-                "connectionType": 1
+                    "COMP_SCI 211",
+                    "GEN_ENG 205-1"
+                ]
             },
             {
-                "connections": "COMP_SCI 213",
-                "connectionType": 0
+                "connections": "COMP_SCI 213"
             }
-        ],
-        "connectionType": 2
+        ]
     }
 }
