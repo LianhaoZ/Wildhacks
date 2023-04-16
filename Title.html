@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROJECT</title> 
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap"
+      rel="stylesheet"/>
+</head>
+<style>
+    body, html {
+      height: 100%;
+      margin: 0; 
+    }
+
+    .color{
+        color: midnightblue;
+    }
+      
+    .bgimg {
+        
+      /* background-image: url("imgs/front page.jpg"); */
+      background-color: white;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: rgb(0, 0, 0);
+      font-family: "Orbitron", sans-serif;
+      font-size: 25px;
+    }
+     
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .bottomleft {
+        /* position: absolute;  */
+        /* left: 16px; */
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        font-weight: var(--semi);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        transition: 0.6s;
+        font-family: "Orbitron", sans-serif;
+        background-color: black;
+        color: white;
+
+        margin: 0;
+        position: absolute;
+        top: 50%; 
+        
+        transform: translate(-50%, 300%);
+    }
+    
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+ 
+</style>
+    <body>
+    
+    <div class="bgimg">          
+      <div class="middle">
+        <h1>Tree</h1> 
+        <form>
+          Course Name: <input type="text" name="course">
+        </form>    
+             
+        <a href="index.html">
+          <button class="bottomleft">Enter</button></a>
+      </div>  
+    </div>
+    
+    
+    </body>
+    </html>
+    
